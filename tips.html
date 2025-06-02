@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #fff0fe;
+    margin: 0;
+    padding: 0;
+    color: #333;
+  }
+
+  header {
+    background-color: #e36be3;
+    padding: 20px;
+    text-align: center;
+    color: rgb(234, 92, 225);
+  }
+
+  #logo {
+    position:relative;
+    top:30px;
+    left:30px;
+    width:180px;
+    height:90px;
+    /*border:solid 1px #ff0000; */
+  }
+
+  nav {
+    background-color: #e36be3;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+  }
+
+  nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  nav a:hover {
+    text-decoration: underline;
+  }
+
+  main {
+    padding: 20px;
+  }
+
+  footer {
+    background-color: #e36be3;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+  }
+
+  .expense-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #fff7fb;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+  }
+
+  .expense-table thead {
+    background-color: #f9c5ec;
+    color: #4a004e;
+  }
+
+  .expense-table th, .expense-table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #f0d9f8;
+  }
+
+  .expense-table tbody tr:hover {
+    background-color: #ffeaf8;
+  }
+
+  .expense-table td:nth-child(3) {
+    text-align: right;
+    font-weight: bold;
+    color: #b20073;
+  }
+  </style>
+</head>
+<body>
+  <div id="header">
+    <img id="logo" src="rainbow.png">
+  </div>
+  <nav>
+    <a href="index.html">홈</a>
+    <a href="places.html">여행지</a>
+    <a href="tips.html">여행 팁 및 경비 안내</a>
+    <a href="gallery.html">갤러리</a>
+    <a href="contact.html">연락처</a>
+  </nav>
+  <main>
+    <h2>여행을 위한 팁</h2>
+    <ul>
+      <li>날씨 정보를 확인하세요</li>
+      <li>응급 처치 키트를 준비하세요</li>
+      <li>선크림을 준비하세요</li>
+      <li>자연을 보호하세요</li>
+    </ul>
+
+    <h2>여행 경비 안내</h2>
+    <p>총 여행 경비는 약 <strong>2,000,000원</strong>이며, 아래 항목들이 포함되어 있습니다:</p>
+    
+    <table class="expense-table">
+      <thead>
+        <tr>
+          <th>항목</th>
+          <th>내용</th>
+          <th>예상 비용</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>항공권</td>
+          <td>왕복 국제선 항공권</td>
+          <td>800,000원</td>
+        </tr>
+        <tr>
+          <td>숙박</td>
+          <td>중급 호텔 3박</td>
+          <td>300,000원</td>
+        </tr>
+        <tr>
+          <td>숙박</td>
+          <td>게르 숙소 4박</td>
+          <td>400,000원</td>
+        </tr>
+        <tr>
+          <td>식사</td>
+          <td>하루 3끼 기본 식사</td>
+          <td>200,000원</td>
+        </tr>
+        <tr>
+          <td>교통</td>
+          <td>공항 픽업 및 현지 교통</td>
+          <td>150,000원</td>
+        </tr>
+        <tr>
+          <td>관광지 입장료</td>
+          <td>주요 관광지 입장권</td>
+          <td>150,000원</td>
+        </tr>
+        <tr>
+          <td>가이드 비용</td>
+          <td>한국어 가능 현지 가이드</td>
+          <td>100,000원</td>
+        </tr>
+        <tr>
+          <td>여행자 보험</td>
+          <td>기본 여행자 보험 포함</td>
+          <td>100,000원</td>
+        </tr>
+      </tbody>
+    </table>
+  </main>
+  <footer>
+    &copy; 2025 RAINBOW TRAVEL
+  </footer>
+</body>
+</html>
